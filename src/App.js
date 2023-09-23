@@ -1,9 +1,8 @@
 import "./App.css";
-
 import Expenses from "./components/Expenses";
 
 function App() {
-  const expensesArray = [
+  const expensesList = [
     {
       id: "e1",
       title: "Phone Bill",
@@ -34,7 +33,7 @@ function App() {
     <div>
       <h2>Let's get started!</h2>
       <p>This is also visible!</p>
-      <Expenses expensesArray={expensesArray} />
+      <Expenses expensesArray={expensesList} />
     </div>
   );
 }
