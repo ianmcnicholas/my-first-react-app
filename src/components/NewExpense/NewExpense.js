@@ -1,7 +1,7 @@
 import "./NewExpense.css";
 import ExpenseForm from "./ExpenseForm";
 
-const NewExpense = () => {
+const NewExpense = (props) => {
   // the below function will take the data from the child ExpenseForm
   // extract it and add on an id field
   const saveExpenseDataHandler = (enteredExpenseData) => {
@@ -9,7 +9,7 @@ const NewExpense = () => {
       ...enteredExpenseData,
       id: Math.random().toString(),
     };
-    console.log(expenseData);
+    props.onAddExpense(expenseData);
   };
 
   return (
