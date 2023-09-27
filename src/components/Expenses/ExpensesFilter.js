@@ -1,9 +1,6 @@
-import React, { useState } from "react";
-
 import "./ExpensesFilter.css";
 
 const ExpensesFilter = (props) => {
-
   const selectYearHandler = (event) => {
     props.onFilter(event.target.value);
   };
